@@ -2,9 +2,7 @@
 #include <cstdint>
 
 namespace Offsets {
-    // ==========================================
-    // Anti-Cheat & Detections (Patch/Hook to ret)
-    // ==========================================
+  
     namespace AntiCheat {
         constexpr uintptr_t OnSpeedHackDetected          = 0x2C9FE08;
         constexpr uintptr_t OnSpeedHackDetectedGpresto   = 0x2C9FE90;
@@ -17,9 +15,7 @@ namespace Offsets {
         constexpr uintptr_t SetCheatDetect               = 0x3436DBC;
     }
 
-    // ==========================================
-    // Fishing System & Controllers
-    // ==========================================
+   
     namespace Fishing {
         // FishingFloatController
         constexpr uintptr_t Float_get_IsHit             = 0x297854C;
@@ -64,9 +60,7 @@ namespace Offsets {
         constexpr uintptr_t System_ResetPoleUseCount     = 0x2988C40;
     }
 
-    // ==========================================
-    // Player Character & Movement Controls
-    // ==========================================
+    
     namespace Player {
         // ActorDefaultControlPlayer
         constexpr uintptr_t get_IsCanMove                = 0x3368A24;
@@ -98,9 +92,7 @@ namespace Offsets {
         constexpr uintptr_t get_IsFly                    = 0x32694C0;
     }
 
-    // ==========================================
-    // Insect & Catching System
-    // ==========================================
+   
     namespace Insect {
         constexpr uintptr_t RequestCatchInsect           = 0x2A47020;
         constexpr uintptr_t RequestTestAutoCatch         = 0x2A4701C;
